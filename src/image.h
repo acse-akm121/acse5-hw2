@@ -1,7 +1,6 @@
 #ifndef AKM_IMAGE_H
 #define AKM_IMAGE_H
 
-
 #include <string>
 #include <vector>
 #include "pixel.h"

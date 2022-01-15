@@ -1,5 +1,5 @@
-main: main.o image.o pixel.o lodepng.o
-	g++ -std=c++11 main.o image.o pixel.o lodepng.o -o main
+main: main.o image.o pixel.o lodepng.o filter.o
+	g++ -std=c++11 main.o image.o pixel.o lodepng.o filter.o -o main
 
 image.o: image.cpp image.h
 	g++ -std=c++11 -c image.cpp -o image.o
@@ -12,6 +12,9 @@ pixel.o: pixel.cpp pixel.h
 
 lodepng.o: lodepng/lodepng.cpp lodepng/lodepng.h
 	g++ -std=c++11 -c lodepng/lodepng.cpp -o lodepng.o
+
+filter.o: filter.cpp filter.h
+	g++ -std=c++11 -c filter.cpp -o filter.o
 
 clean:
 	rm *.o;rm main
