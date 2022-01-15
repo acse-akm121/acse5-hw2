@@ -5,8 +5,8 @@
 using std::string;
 
 int main(int argc, char *argv[]) {
-    string inFile = "test_image.png";
-    string outFile = "test_image_out.png";
+    string inFile = "data/test_image.png";
+    string outFile = "data/test_image_out.png";
     std::cout << "Reading from: " << inFile << std::endl;
     Image img;
     bool err = img.readFromFile(inFile);
